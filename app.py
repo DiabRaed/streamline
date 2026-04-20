@@ -22,6 +22,15 @@ def find_column(df, possible_names):
 st.title("Excel Report Automation Tool")
 st.markdown("📧 [contact@raeddiab.com](mailto:contact@raeddiab.com)")
 
+st.markdown("""
+Upload an Excel (.xlsx) file and get an automated report in seconds.
+
+- Detects key columns (date, country, sales, product)
+- Generates summaries and breakdowns
+- Creates charts automatically
+- Outputs a clean Excel report ready to use
+""")
+
 uploaded_file = st.file_uploader("Upload Excel file", type=["xlsx"])
 
 if uploaded_file:
